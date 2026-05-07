@@ -7,6 +7,7 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 ;
 let passwordOneEl = document.getElementById("passwordOne");
 let passwordTwoEl = document.getElementById("passwordTwo");
+let passwordBox = document.querySelector(".password-box");
 
 const paswordLength = 15; 
 
@@ -23,5 +24,7 @@ function getRandomPassword(){
 function generatePasswords(){
     passwordOneEl.textContent = getRandomPassword();
     passwordTwoEl.textContent = getRandomPassword();
+    
+    
 }
 
