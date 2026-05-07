@@ -4,3 +4,24 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
     "~", "`", "!", "@", "#", "$", "%", "^", "&", "*",
     "-", "_", "+", "="
 ]
+;
+let passwordOneEl = document.getElementById("passwordOne");
+let passwordTwoEl = document.getElementById("passwordTwo");
+
+const paswordLength = 15; 
+
+function getRandomPassword(){
+    let password = "";
+    for (let i =0; i <paswordLength; i++){
+        RandomIndex =  Math.floor(Math.random() * characters.length);
+        password += characters[RandomIndex];
+    }
+    return password;
+}
+
+
+function generatePasswords(){
+    passwordOneEl.textContent = getRandomPassword();
+    passwordTwoEl.textContent = getRandomPassword();
+}
+
