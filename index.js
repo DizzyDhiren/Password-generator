@@ -28,3 +28,20 @@ function generatePasswords(){
     
 }
 
+function copyPasswordOne(){
+    var copyText = document.getElementById("passwordOne").textContent;
+
+    console.log(copyText);
+
+    navigator.clipboard.writeText(copyText);
+    alert("Password copied to clipboard");
+}
+
+function copyPasswordTwo(){
+    var copyText = document.getElementById("passwordTwo").textContent;
+
+    console.log(copyText);
+
+    navigator.clipboard.writeText(copyText);
+    alert("Password copied to clipboard" );
+}
